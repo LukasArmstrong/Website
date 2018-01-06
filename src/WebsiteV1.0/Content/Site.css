@@ -1,0 +1,79 @@
+﻿/*****************************************
+    Overarching Defaults
+******************************************/
+body {
+    background-color: #3a3a3a;
+}
+h1{
+    color:white;
+    padding-left: 2%;
+}
+a{
+    color: white;
+}
+img {
+    width: 30em;
+    height: 20em;
+    box-shadow: 10px 10px 5px #272727;
+}
+div {
+    color: white;
+}
+p {
+    font-size: 1.5em;
+    text-shadow: 2px 2px 2px #242424;
+}
+.shadow {
+    box-shadow: 10px 10px 5px #272727;
+}
+/*****************************************
+    Nav Logo resize and reposition
+******************************************/
+.logo img {
+    position: relative;
+    top: -10px;
+    height: 2em;
+    width: 3em;
+}
+/*****************************************
+    Ned-Nu-Trailty Image Cross fading
+******************************************/
+#CrossFade {
+    position: relative;
+}
+#CrossFade p{
+    position: relative;
+    top: 13.5em;
+}
+#CrossFade img {
+    position: absolute;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+        
+}
+@keyframes CrossFade-FadeInOut {
+    0% {
+        opacity: 1;
+    }
+
+    45% {
+        opacity: 1;
+    }
+
+    55% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+#CrossFade img.top {
+    animation-name: CrossFade-FadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+    animation-direction: alternate;
+}

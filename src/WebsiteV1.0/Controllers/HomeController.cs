@@ -12,5 +12,13 @@ namespace WebsiteV1._0.Controllers
         {
             return View();
         }
+        public ActionResult About()
+        {
+            return View();
+        }
+        public ActionResult Resume()
+        {
+            return View();
+        }
     }
 }
