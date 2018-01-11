@@ -38,42 +38,45 @@ p {
 /*****************************************
     Ned-Nu-Trailty Image Cross fading
 ******************************************/
-#CrossFade {
+#cycler {
     position: relative;
 }
-#CrossFade p{
-    position: relative;
-    top: 13.5em;
-}
-#CrossFade img {
+
+#cycler img {
     position: absolute;
-    -webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
-        
+    z-index: 1
 }
-@keyframes CrossFade-FadeInOut {
-    0% {
-        opacity: 1;
-    }
 
-    45% {
-        opacity: 1;
-    }
-
-    55% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 0;
-    }
+#cycler img.active {
+    z-index: 3
 }
-#CrossFade img.top {
-    animation-name: CrossFade-FadeInOut;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 30s;
-    animation-direction: alternate;
+/*****************************************
+    Overlay
+******************************************/
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 1em;
+    right: 0;
+    background-color: #696969;
+    overflow: hidden;
+    width: 30.1em;
+    height: 0;
+    transition: .5s ease;
+    z-index: 5;
+}
+.ConOverlay:hover .overlay {
+    height: 10%;
+    opacity: 0.75;
+}
+.text {
+    white-space: nowrap;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }

@@ -12,7 +12,7 @@ namespace WebsiteV1._0
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-            routes.Add(new SubdomainRoute());
+            routes.Add(new WebApplication.Helpers.SubdomainRoute());
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
