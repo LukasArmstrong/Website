@@ -37,21 +37,5 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script>
-        function cycleImages() {
-            var $active = $('#cycler .active');
-            var $next = ($active.next().length > 0) ? $active.next() : $('#cycler img:first');
-            $next.css('z-index', 2);//move the next image up the pile
-            $active.fadeOut(1500, function () {//fade out the top image
-                $active.css('z-index', 1).show().removeClass('active');//reset the z-index and unhide the image
-                $next.css('z-index', 3).addClass('active');//make the next image the top one
-            });
-        }
-
-        $(document).ready(function () {
-            // run every 7s
-            setInterval('cycleImages()', 10000);
-        })
-    </script>
 </body>
 </html>

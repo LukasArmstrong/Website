@@ -37,21 +37,6 @@ p {
     width: 3em;
 }
 /*****************************************
-    Ned-Nu-Trailty Image Cross fading
-******************************************/
-#cycler {
-    position: relative;
-}
-
-#cycler img {
-    position: absolute;
-    z-index: 1
-}
-
-#cycler img.active {
-    z-index: 3
-}
-/*****************************************
     Overlay
 ******************************************/
 .overlay {
@@ -80,4 +65,8 @@ p {
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+}
+.repo{
+    width: 1em;
+    height: auto;
 }
