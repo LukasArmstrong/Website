@@ -14,7 +14,7 @@ a{
 img {
     width: 30em;
     height: 20em;
-    box-shadow: 10px 10px 5px #272727;
+   /* box-shadow: 10px 10px 5px #272727;*/
 }
 div {
     color: white;
@@ -52,8 +52,8 @@ p {
     z-index: 5;
 }
 .ConOverlay:hover .overlay {
-    height: 10%;
-    opacity: 0.75;
+    height: 15%;
+    opacity: 0.90;
 }
 .text {
     white-space: nowrap;
@@ -67,6 +67,40 @@ p {
     -ms-transform: translate(-50%, -50%);
 }
 .repo{
-    width: 1em;
+    position:relative;
+    top: 0.70em;
+    left: .85em;
+    width: 1.5em;
     height: auto;
+}
+.info {
+    position: relative;
+    top: 0.45em;
+    left: .55em;
+    width: 2em;
+    height: auto;
+}
+.small-circle-left {
+    position: relative;
+    top: 0.35em;
+    left: 5em;
+    width: 3em;
+    height: 3em;
+    background: #FFF;
+    -moz-border-radius: 1.5em;
+    -webkit-border-radius: 1.5em;
+    border-radius: 1.5em;
+    float: left;
+}
+.small-circle-right {
+    position: relative;
+    top: 0.35em;
+    right: 5em;
+    width: 3em;
+    height: 3em;
+    background: #FFF;
+    -moz-border-radius: 1.5em;
+    -webkit-border-radius: 1.5em;
+    border-radius: 1.5em;
+    float: right;
 }
